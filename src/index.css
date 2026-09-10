@@ -1,0 +1,75 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --color-bg: #f7f8fb;
+  --color-bg-soft: #f3f4f8;
+  --color-surface: #ffffff;
+  --color-text: #1c1b22;
+  --color-text-muted: #6b7280;
+  --color-text-light: #9aa0ab;
+  --color-border: #e8e7ef;
+  --color-accent: #6366f1;
+  --color-accent-2: #a855f7;
+  --color-accent-hover: #4f46e5;
+  --color-accent-soft: rgba(99, 102, 241, 0.14);
+  --color-accent-light: #eef0ff;
+  --color-tag: #f3f2f8;
+  --color-tag-border: #e2e0ec;
+  --color-tag-selected: #6366f1;
+  --color-tag-selected-text: #4f46e5;
+  --color-preview-stage: #eef0f6;
+  --color-card-bg: linear-gradient(180deg, #ffffff 0%, #f7f6f3 100%);
+  --gradient-brand: linear-gradient(90deg, #6366f1 0%, #8b5cf6 100%);
+  --radius-sm: 10px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --radius-xl: 24px;
+  --shadow-sm: 0 1px 2px rgba(28, 27, 40, 0.04);
+  --shadow-md: 0 12px 32px rgba(76, 70, 120, 0.08);
+  --shadow-lg: 0 18px 40px rgba(76, 70, 120, 0.1);
+  --font-sans: 'DM Sans', 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+}
+
+html {
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-bg);
+  background-image:
+    radial-gradient(820px 420px at 92% -6%, rgba(168, 85, 247, 0.16), transparent 58%),
+    radial-gradient(640px 380px at 8% 8%, rgba(99, 102, 241, 0.1), transparent 55%),
+    radial-gradient(560px 300px at 18% 100%, rgba(139, 92, 246, 0.1), transparent 62%);
+  background-attachment: fixed;
+  color: var(--color-text);
+  line-height: 1.65;
+  min-height: 100vh;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+input,
+textarea {
+  font-family: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
