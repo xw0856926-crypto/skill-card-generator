@@ -1,0 +1,27 @@
+{
+  "envId": "your-env-id",
+  "functionRoot": ".",
+  "functions": [
+    {
+      "name": "analyze",
+      "dir": ".",
+      "handler": "cloudfunctions/analyze/index.main",
+      "timeout": 60,
+      "runtime": "Nodejs18.15",
+      "memorySize": 256,
+      "installDependency": false,
+      "ignore": [
+        ".git",
+        ".git/**/*",
+        "node_modules",
+        "node_modules/**/*",
+        "dist",
+        "dist/**/*",
+        "src",
+        "src/**/*",
+        "api",
+        "api/**/*"
+      ]
+    }
+  ]
+}

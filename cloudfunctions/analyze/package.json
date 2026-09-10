@@ -1,0 +1,6 @@
+{
+  "name": "analyze",
+  "private": true,
+  "type": "module",
+  "main": "index.js"
+}
